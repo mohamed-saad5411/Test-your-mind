@@ -48,19 +48,40 @@ body {
 p[data-value] {
     cursor: pointer;
 }
-#quizPage ,#correctBtn,#inCorrectBtn,#scoreBtn ,#finishPage{
+
+#quizPage,
+#correctBtn,
+#inCorrectBtn,
+#scoreBtn,
+#finishPage {
     display: none;
 }
 
 @media screen and (max-width: 500px) {
-    #quizPage ,#finishPage , #startPage div{
+
+    #quizPage div,
+    #finishPage div,
+    #startPage div {
         width: 90% !important;
+    }
+
+    #startPage .container{
+        width: 100% !important;
+    }
+    #startPage ul , input[type='number']{
+        width: 120% !important;
+    }
+    .start-btn{
+        text-align: center;
     }
 
 }
 
 @media screen and (max-width: 600px) {
-    #quizPage ,#finishPage , #startPage div{
+
+    #quizPage,
+    #finishPage,
+    #startPage div {
         width: 75% !important;
     }
 

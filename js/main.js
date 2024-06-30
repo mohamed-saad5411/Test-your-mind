@@ -78,7 +78,7 @@ function displayQuestion() {
 
     document.getElementById('categoryOfQuestion').innerHTML = `${questionContainer[i][i].category} Quiz`
     document.getElementById('fQuestion').innerHTML = `Q${i + 1}` + ` : ` + fristQuestion
-    document.getElementById('noOfQuestions').innerHTML = `${i + 1} Of ${numberInput} Question`
+    document.getElementById('noOfQuestions').innerHTML = `${i + 1} Of ${numberInput}`
     let cartoona = ``
     for (let index = 0; index < answerContainer.length; index++) {
         cartoona += `<label class='d-block'>
@@ -117,9 +117,9 @@ function checkAnswers() {
 }
 
 function ShowNextQuestion() {
-    $('#quizPage').fadeOut(500, function () {
-        $('#quizPage').fadeIn(500);
-    });
+    // $('#quizPage').fadeOut(500, function () {
+    //     $('#quizPage').fadeIn(500);
+    // });
     checkAnswers()
     i++
     if (i == numberInput - 1) {
