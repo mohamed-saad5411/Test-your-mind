@@ -1,0 +1,67 @@
+:root {
+    --main-color: #653383;
+    --main-color-hover: #805c94;
+}
+
+body {
+    background-image: url(../images/Wave-100s-1366px\ \(2\).svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.start-btn {
+    text-align: end;
+
+}
+
+.btn-mainColor {
+    background: var(--main-color);
+    color: white;
+    transition: all 0.5s;
+}
+
+.btn-mainColor:hover {
+    background: var(--main-color-hover);
+    color: white;
+}
+
+.mainColor {
+    color: var(--main-color);
+}
+
+.w-95 {
+    width: 95%;
+}
+
+.btn-custom {
+    cursor: auto !important;
+
+}
+
+.btn-custom:hover {
+    background: var(--main-color);
+    color: white;
+}
+
+p[data-value] {
+    cursor: pointer;
+}
+#quizPage ,#correctBtn,#inCorrectBtn,#scoreBtn ,#finishPage{
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    #quizPage ,#finishPage , #startPage div{
+        width: 90% !important;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #quizPage ,#finishPage , #startPage div{
+        width: 75% !important;
+    }
+
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test your mind</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section id="startPage" class="my-5">
+        <div class="m-auto pb-3 bg-white rounded-3 w-50">
+            <div class="text-center rounded-3 m-auto bg-body-tertiary">
+                <p class="h1 mainColor border-bottom py-5">Setting Your Quiz </p>
+            </div>
+
+            <div class="container">
+                <div id="category" class="my-4">
+                    <label for="categoryData" class="pb-2 mainColor">Category</label>
+                    <ul class="list-unstyled ps-2 form-control">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-expanded="false">Choose Category</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <p data-value="9" class="dropdown-item m-0">General Knowledge</p>
+                                </li>
+                                <li>
+                                    <p data-value="27" class="dropdown-item m-0">Animals</p>
+                                </li>
+                                <li>
+                                    <p data-value="15" class="dropdown-item m-0">Video Games</p>
+                                </li>
+                                <li>
+                                    <p data-value="23" class="dropdown-item m-0">History</p>
+                                </li>
+                                <li>
+                                    <p data-value="21" class="dropdown-item m-0">Sports</p>
+                                </li>
+                                <li>
+                                    <p data-value="18" class="dropdown-item m-0">Science: Computers</p>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="difficulty" class="my-4">
+                    <p class="mainColor">Difficulty </p>
+                    <div class="ps-2">
+                        <input id="Easy" value="Easy" name="Difficulty" type="radio" class="">
+                        <label class="m-0" for="Easy">Easy</label>
+                    </div>
+                    <div class="ps-2">
+                        <input id="Medium" name="Difficulty" value="Medium" type="radio" class="">
+                        <label class="m-0" for="Medium">Medium</label>
+                    </div>
+                    <div class="ps-2">
+                        <input id="Hard" name="Difficulty" value="Hard" type="radio" class="">
+                        <label class="m-0" for="Hard">Hard</label>
+                    </div>
+                </div>
+
+                <div id="number" class="my-4">
+                    <input type="number" class=" form-control" placeholder="Number Of questions">
+                </div>
+
+                <div class="start-btn">
+                    <button id="startBtn" class="btn btn-mainColor rounded-5 px-4">Start</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="quizPage" class="my-5">
+        <div class="m-auto pb-3 bg-white rounded-3 w-50">
+            <div class="text-center border-bottom rounded-3 bg-body-tertiary">
+                <p id="categoryOfQuestion" class="h4 mainColor pt-5"></p>
+                <div class="start-btn w-95 d-flex justify-content-between">
+                    <div>
+                        <button id="correctBtn" class="btn ms-2 btn-success rounded-2 mb-3 btn-sm">Correct</button>
+                        <button id="inCorrectBtn" class="btn ms-2 btn-danger rounded-3 mb-3 btn-sm">inCorrect</button>
+                    </div>
+                    <button id="noOfQuestions" class="btn btn-custom btn-mainColor rounded-5 mb-3 btn-sm"></button>
+                </div>
+            </div>
+
+            <div class="container">
+
+                <div class="my-4">
+                    <h4 id="fQuestion" class="mainColor"></h4>
+
+                    <div id="questions">
+                    
+                    </div>
+                </div>
+
+                <div class="start-btn">
+                    <button id="submitBtn" class="btn btn-mainColor rounded-5 px-4">Submit</button>
+                    <button id="scoreBtn" class="btn btn-mainColor w-100 rounded-5 px-4">Get Score</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="finishPage" class="my-5">
+        <div class="m-auto pb-3 bg-white rounded-3 overflow-hidden w-50">
+            <div class="text-center border-bottom bg-body-tertiary">
+                <h3 class="h1 mainColor py-5">Finish</h3>
+            </div>
+
+            <div class="container">
+
+                <div class="my-5 text-center">
+                    <h4 class="mainColor">Score</h4>
+                    <p class="ps-2" id="score"></p>
+
+                </div>
+
+                <div class="start-btn mb-4">
+                    <button class="btn btn-mainColor rounded-5 px-4"><a class="text-decoration-none text-white" href="">Try Again ?</a></button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+</body>
+
+</html>
